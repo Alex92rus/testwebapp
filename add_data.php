@@ -3,7 +3,7 @@
     include("pdbconnect.php");
 
     // Prepare the SQL statement
-    $SQL = "INSERT INTO b42Snapshot (DoorID, transition, Confidence) VALUES ('".$_GET["DoorID"]."', '".$_GET["transition"]."', '".$_GET["Confidence"]."')";     
+    $SQL = "INSERT INTO b42Snapshot (DoorID, event_time,transition, Confidence) VALUES ('".$_GET["DoorID"]."', NOW(), '".$_GET["transition"]."', '".$_GET["Confidence"]."')";     
 
     // Execute SQL statement
     mysql_query($SQL);
