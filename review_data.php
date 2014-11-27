@@ -61,8 +61,9 @@
         $oddrow = !$oddrow;
 
         echo '<tr>';
-        echo '   <td'.$css_class.'>'.$row["Occid"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["OccID"].'</td>';
         echo '   <td'.$css_class.'>'.$row["event_time"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["DoorID"].'</td>';
         echo '   <td'.$css_class.'>'.$row["transition"].'</td>';
         echo '   <td'.$css_class.'>'.$row["Confidence"].'</td>';
         echo '</tr>';
