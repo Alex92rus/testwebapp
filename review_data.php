@@ -7,6 +7,14 @@
 <head>
     <title>Arduino transition Log</title>
     <style type="text/css">
+        .title {
+          float: none;
+          text-align:center;
+        }
+        table {
+          margin-left:auto;
+          margin-right:auto;
+        }
         .table_titles, .table_cells_odd, .table_cells_even {
                 padding-right: 20px;
                 padding-left: 20px;
@@ -30,7 +38,9 @@
 </head>
 
     <body>
-        <h1>Arduino transition Log</h1>
+        <div class="title">
+            <h1>Arduino transition Log</h1>
+        </div>
     <table border="0" cellspacing="0" cellpadding="4">
       <tr>
             <td class="table_titles">ID</td>
