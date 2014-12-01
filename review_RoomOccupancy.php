@@ -1,11 +1,11 @@
 <?php 
     // Start MySQL Connection
-    include('pdbconnect.php');
+    include('pdbconnect.php'); 
 ?>
 
 <html>
 <head>
-    <title>Arduino transition Log</title>
+    <title>Data for room Occupancy</title>
     <style type="text/css">
         .title {
           float: none;
@@ -40,7 +40,7 @@
 
     <body>
         <div class="title">
-            <h1>Arduino transition Log</h1>
+            <h1>Room Historical Data</h1>
         </div>
         <div class="navigation">
             <ul id="nav">
@@ -54,13 +54,12 @@
       <tr>
             <td class="table_titles">ID</td>
             <td class="table_titles">Date and Time</td>
-            <td class="table_titles">DoorID</td>
-            <td class="table_titles">Transition</td>
-            <td class="table_titles">Confidence</td>
+            <td class="table_titles">Room</td>
+            <td class="table_titles">People</td>
      </tr>
 <?php
     // Retrieve all records and display them
-    $result = mysql_query("SELECT * FROM b42Snapshot ORDER BY Occid ASC");
+    $result = mysql_query("SELECT * FROM RoomOccupancy ORDER BY Occid ASC");
 
     // Used for row color toggle
     $oddrow = true;
@@ -81,10 +80,9 @@
 
         echo '<tr>';
         echo '   <td'.$css_class.'>'.$row["OccID"].'</td>';
-        echo '   <td'.$css_class.'>'.$row["event_time"].'</td>';
-        echo '   <td'.$css_class.'>'.$row["DoorID"].'</td>';
-        echo '   <td'.$css_class.'>'.$row["transition"].'</td>';
-        echo '   <td'.$css_class.'>'.$row["Confidence"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["EventTime"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["RoomID"].'</td>';
+        echo '   <td'.$css_class.'>'.$row["NumberOfPeople"].'</td>';
         echo '</tr>';
     }
 ?>

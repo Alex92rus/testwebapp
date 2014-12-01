@@ -1,0 +1,113 @@
+<!--CSS for navigation bar -->
+
+html,body {
+	margin:0;
+	padding:0;
+	color:#222;
+	background:#fff;
+}
+
+body {
+	padding: 10px;
+	font: 76%/150% "Lucida Grande", "Lucida Sans Unicode", Lucida, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.accountcreate {
+
+}
+
+.navigation {
+	display:block;
+	overflow: hidden;
+}
+
+.title {
+	width: 100%;
+}
+
+.message {
+	position:relative;
+	display:block;
+	margin-top: 10px;
+	font-size: 15px;
+	height: 100%;
+}
+
+.order {
+	font-weight:800;
+}
+
+.form_container {
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+.main div {
+	padding-left:20px;
+}
+
+.main div div {
+	padding-left: 0px;
+}
+
+.order_info table {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+.form_container div {
+	font-weight: 800;
+	margin-left: 5px;
+}
+
+label span {
+	color: #777777;
+	font-weight: 500;
+}
+
+#account_password_submit {
+	height: 2.7em;
+	font-family: "arial", cursive;
+	font-weight: 800; 
+}
+
+#nav {
+	background: #808259 url(nav_bg.jpg) 0 0 repeat-x;
+	width: 100%;
+	float: left;
+	border: 1px solid #42432d;
+	border-width: 1px 0;
+}
+
+#nav li {
+	display:inline;
+	padding:0;
+	margin:0;
+}
+
+#nav a:link,
+#nav a:visited {
+	color:#000;
+	background:#b2b580;
+	padding:20px 40px 4px 10px;
+	float:left;
+	width:auto;
+	border-right:1px solid #42432d;
+	text-decoration:none;
+	font:bold 1em/1em Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	text-shadow: 2px 2px 2px #555;
+}
+
+#nav a:hover,
+#nav a:focus {
+	color:#fff;
+	background:#727454;
+}
+
+#nav li:first-child a {
+	border-left:1px solid #42432d;
+}
