@@ -77,10 +77,14 @@ label span {
 #nav {
 	background: #808259 url(nav_bg.jpg) 0 0 repeat-x;
 	width: 100%;
-	margin-left: auto;
-  margin-right: auto;
+	float: left;
 	border: 1px solid #42432d;
 	border-width: 1px 0;
+}
+
+#nav ul {
+  display: inline-block;
+  list-style-type: none;
 }
 
 #nav li {
