@@ -6,35 +6,7 @@
 <html>
 <head>
     <title>Data for room Occupancy</title>
-    <style type="text/css">
-        .title {
-          float: none;
-          text-align:center;
-        }
-        table {
-          margin-left:auto;
-          margin-right:auto;
-        }
-        .table_titles, .table_cells_odd, .table_cells_even {
-                padding-right: 20px;
-                padding-left: 20px;
-                color: #000;
-        }
-        .table_titles {
-            color: #FFF;
-            background-color: #666;
-        }
-        .table_cells_odd {
-            background-color: #CCC;
-        }
-        .table_cells_even {
-            background-color: #FAFAFA;
-        }
-        table {
-            border: 2px solid #333;
-        }
-        body { font-family: "Trebuchet MS", Arial; }
-    </style>
+    <link rel="stylesheet", type="text/css", href="main_style.css">
     <link rel="stylesheet", type="text/css", href="nav_bar.css">
 </head>
 
@@ -44,10 +16,10 @@
         </div>
         <div class="navigation">
             <ul id="nav">
-                <li id="nav-log"><a href="">Android Log</a></li>
+                <li id="nav-log"><a href="review_data.php">Android Log</a></li>
                 <li id="nav-current"><a href="">Current State</a></li>
                 <li id="nav-plan"><a href="">Building Plan</a></li>
-                <li id="nav-occupancy"><a href="">Room Occupancy</a></li>
+                <li id="nav-occupancy"><a href="review_RoomOccupancy.php">Room Occupancy</a></li>
             </ul>
         </div>
     <table border="0" cellspacing="0" cellpadding="4">
