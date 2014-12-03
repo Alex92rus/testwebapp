@@ -14,14 +14,7 @@
         <div class="title">
             <h1>Arduino transition Log</h1>
         </div>
-        <div class="navigation">
-            <ul id="nav">
-                <li id="nav-log"><a href="review_data.php">Android Log</a></li>
-                <li id="nav-current"><a href="review_CurrentState.php">Current State</a></li>
-                <li id="nav-plan"><a href="review_BuildingPlan.php">Building Plan</a></li>
-                <li id="nav-occupancy"><a href="review_RoomOccupancy.php">Room Occupancy</a></li>
-            </ul>
-        </div>
+        <?php include 'navigation_bar.php';?>
     <table border="0" cellspacing="0" cellpadding="4">
       <tr>
             <td class="table_titles">ID</td>
