@@ -1,5 +1,5 @@
 <?php
-$url = 'http://qualoccupy.azurewebsites.net/add_data.php';
+$url = 'http://qualoccupy.azurewebsites.net/add_data_simulator.php';
 $handle = fopen("inputfile.csv", "r");
 if ($handle) {
     while (($data = fgetcsv($handle)) !== false) {
